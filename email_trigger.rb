@@ -1,4 +1,4 @@
-@log.info("STARTED execution of 'email.rb' script")
+@log.info("STARTED execution of 'email_trigger.rb' script")
 from = @input.get("from")
 to = @input.get("to")
 trigger = @input.get("trigger")
@@ -17,4 +17,4 @@ content_type = @input.get("content-type")
 @log.info("Body : #{body}")
 @log.info("Content-type :#{content_type}")
  
-@log.info("FINISHED execution of 'email.rb' script")
+@log.info("FINISHED execution of 'email_trigger.rb' script")
