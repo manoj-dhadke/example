@@ -5,7 +5,9 @@ instance_id = @input.get("instance-id")
 
 @log.info("Flintbit input parameters are, instance_id : #{instance_id}")
 
-response = @call.connector("amazon-ec2").set("action","start-instances").set("region","us-east-1").set("instance-id",instance_id).sync
+response = @call.connector("amazon-ec2").set("action","start-instances")
+                                        .set("region","us-east-1")
+                                        .set("instance-id",instance_id).sync
 
 #Amazon EC2 Connector Response Meta Parameters
 response_exitcode = response.exitcode					#Exit status code
